@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://fashionista.com/.image/t_share/MTcwODMwMzM3Nzc2MDM1MDc4/paris-street-style-fall-2020-street-style-day-5.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://fashionista.com/.image/t_share/MTcwNzU5NDkyNTU4OTIzNDE1/paris-fashion-week-fall-2020-street-style-day-2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://fashionista.com/.image/c_fit%2Ccs_srgb%2Cq_auto:good%2Cw_620/MTcwMzQyMzY0Nzk4MjY0NTQ0/new-york-fashion-week-fall-2020-street-style-day-2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div *ngFor="let i of shopData" class="col col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <div class="card">
+                        <img src="{{i.image}}" class="img-thumbnail" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">{{i.title}}</h5>
+                            <h4 class="card-title">{{i.price}}</h4>
+                        <a href="#" class="btn btn-primary">BUY</a>
+                        </div>
+                    </div>
+            
+        </div>
+    </div>
+</div>
